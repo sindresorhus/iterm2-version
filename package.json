@@ -1,0 +1,38 @@
+{
+  "name": "iterm2-version",
+  "version": "0.0.0",
+  "description": "Get the iTerm2 version",
+  "license": "MIT",
+  "repository": "sindresorhus/iterm2-version",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "iterm",
+    "iterm2",
+    "terminal",
+    "app",
+    "version"
+  ],
+  "dependencies": {
+    "app-path": "^2.0.0",
+    "execa": "^0.2.2",
+    "pify": "^2.3.0",
+    "plist": "^1.2.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
