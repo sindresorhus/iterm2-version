@@ -15,10 +15,8 @@ $ npm install --save iterm2-version
 ```js
 const iterm2Version = require('iterm2-version');
 
-iterm2Version().then(version => {
-	console.log(version);
-	//=> '2.9.20160307'
-});
+iterm2Version();
+//=> '2.9.20160307'
 ```
 
 

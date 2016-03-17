@@ -26,9 +26,7 @@
     "version"
   ],
   "dependencies": {
-    "app-path": "^2.0.0",
-    "execa": "^0.2.2",
-    "pify": "^2.3.0",
+    "app-path": "^2.1.0",
     "plist": "^1.2.0"
   },
   "devDependencies": {

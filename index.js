@@ -2,9 +2,9 @@
 const path = require('path');
 const fs = require('fs');
 const appPath = require('app-path');
-const pify = require('pify');
 const plist = require('plist');
 
-module.exports = () => appPath('iTerm')
-	.then(fp => pify(fs.readFile)(path.join(fp, 'Contents/Info.plist'), 'utf8'))
-	.then(data => plist.parse(data).CFBundleVersion);
+module.exports = () => {
+	const fp = path.join(appPath.sync('iTerm'), 'Contents/Info.plist');
+	return plist.parse(fs.readFileSync(fp, 'utf8')).CFBundleVersion;
+};
