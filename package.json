@@ -27,13 +27,10 @@
   ],
   "dependencies": {
     "app-path": "^2.1.0",
-    "plist": "^1.2.0"
+    "plist": "^2.0.1"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
-  },
-  "xo": {
-    "esnext": true
   }
 }

@@ -9,6 +9,6 @@ test(t => {
 
 	const version = m();
 	t.true(version.length > 0);
-	t.is(version[0], '2');
+	t.is(version[0], '3');
 	t.true(m().length > 0);
 });
