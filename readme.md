@@ -8,7 +8,7 @@ Note: The `2` in iTerm2 is [part of the name](https://en.wikipedia.org/wiki/ITer
 ## Install
 
 ```
-$ npm install --save iterm2-version
+$ npm install iterm2-version
 ```
 
 
