@@ -1,14 +1,14 @@
 import test from 'ava';
-import m from '.';
+import iTerm2Version from '.';
 
-test(t => {
+test('main', t => {
 	if (process.env.CI) {
 		t.pass();
 		return;
 	}
 
-	const version = m();
+	const version = iTerm2Version();
 	t.true(version.length > 0);
 	t.is(version[0], '3');
-	t.true(m().length > 0);
+	t.true(iTerm2Version().length > 0);
 });
