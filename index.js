@@ -6,9 +6,9 @@ const plist = require('plist');
 
 let version;
 
-module.exports = () => {
+const iterm2Version = () => {
 	if (!version) {
-		if (process.env.TERM_PROGRAM_VERSION) {
+		if (process.env.TERM_PROGRAM === 'iTerm.app' && process.env.TERM_PROGRAM_VERSION) {
 			version = process.env.TERM_PROGRAM_VERSION;
 		} else {
 			const fp = path.join(appPath.sync('iTerm'), 'Contents/Info.plist');
@@ -18,3 +18,6 @@ module.exports = () => {
 
 	return version;
 };
+
+module.exports = iterm2Version;
+module.exports.default = iterm2Version;
