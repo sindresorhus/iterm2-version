@@ -11,8 +11,8 @@ const iterm2Version = () => {
 		if (process.env.TERM_PROGRAM === 'iTerm.app' && process.env.TERM_PROGRAM_VERSION) {
 			version = process.env.TERM_PROGRAM_VERSION;
 		} else {
-			const fp = path.join(appPath.sync('iTerm'), 'Contents/Info.plist');
-			version = plist.parse(fs.readFileSync(fp, 'utf8')).CFBundleVersion;
+			const filePath = path.join(appPath.sync('iTerm'), 'Contents/Info.plist');
+			version = plist.parse(fs.readFileSync(filePath, 'utf8')).CFBundleVersion;
 		}
 	}
 
