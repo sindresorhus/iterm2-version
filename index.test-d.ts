@@ -1,4 +1,4 @@
-import {expectType} from 'tsd-check';
-import iterm2Version from '.';
+import {expectType} from 'tsd';
+import iterm2Version = require('.');
 
 expectType<string | undefined>(iterm2Version());

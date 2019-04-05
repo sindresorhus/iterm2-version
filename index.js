@@ -20,4 +20,5 @@ const iterm2Version = () => {
 };
 
 module.exports = iterm2Version;
+// TODO: Remove this for the next major release
 module.exports.default = iterm2Version;
