@@ -1,6 +1,6 @@
 {
 	"name": "iterm2-version",
-	"version": "4.1.0",
+	"version": "4.2.0",
 	"description": "Get the iTerm2 version",
 	"license": "MIT",
 	"repository": "sindresorhus/iterm2-version",
