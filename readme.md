@@ -1,4 +1,4 @@
-# iterm2-version [![Build Status](https://travis-ci.org/sindresorhus/iterm2-version.svg?branch=master)](https://travis-ci.org/sindresorhus/iterm2-version)
+# iterm2-version
 
 > Get the [iTerm2](https://www.iterm2.com) version
 
