@@ -1,12 +1,15 @@
-'use strict';
-const path = require('path');
-const fs = require('fs');
-const appPath = require('app-path');
-const plist = require('plist');
+import path from 'node:path';
+import fs from 'node:fs';
+import appPath from 'app-path';
+import plist from 'plist';
 
 let version;
 
-const iterm2Version = () => {
+export default function iterm2Version() {
+	if (process.platform !== 'darwin') {
+		return;
+	}
+
 	if (!version) {
 		if (process.env.TERM_PROGRAM === 'iTerm.app' && process.env.TERM_PROGRAM_VERSION) {
 			version = process.env.TERM_PROGRAM_VERSION;
@@ -17,8 +20,4 @@ const iterm2Version = () => {
 	}
 
 	return version;
-};
-
-module.exports = iterm2Version;
-// TODO: Remove this for the next major release
-module.exports.default = iterm2Version;
+}

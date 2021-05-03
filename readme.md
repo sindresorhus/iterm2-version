@@ -4,26 +4,19 @@
 
 Note: The `2` in iTerm2 is [part of the name](https://en.wikipedia.org/wiki/ITerm2) and does not indicate the version.
 
-
 ## Install
 
 ```
 $ npm install iterm2-version
 ```
 
-
 ## Usage
 
 ```js
-const iterm2Version = require('iterm2-version');
+import iterm2Version from 'iterm2-version';
 
 iterm2Version();
 //=> '3.0.15'
 ```
 
 If you're running this on a different terminal or operating system, it will return `undefined`.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

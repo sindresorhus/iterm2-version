@@ -1,5 +1,5 @@
 import test from 'ava';
-import iTerm2Version from '.';
+import iTerm2Version from './index.js';
 
 test('main', t => {
 	if (process.env.CI) {
