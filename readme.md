@@ -15,8 +15,16 @@ npm install iterm2-version
 ```js
 import iterm2Version from 'iterm2-version';
 
-iterm2Version();
-//=> '3.0.15'
+console.log(iterm2Version());
+//=> '3.5.10'
 ```
 
-If you're running this on a different terminal or operating system, it will return `undefined`.
+If you're not running in iTerm2, it will return `undefined`.
+
+Works over SSH by querying the terminal via escape sequences when environment variables are not available.
+
+## API
+
+### iterm2Version()
+
+Returns a `string | undefined` with the iTerm2 version.

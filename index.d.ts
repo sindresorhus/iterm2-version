@@ -1,14 +1,14 @@
 /**
 Get the [iTerm2](https://www.iterm2.com) version.
 
-@returns The iTerm2 version. If you're running this on a different terminal or operating system, it will return `undefined`.
+@returns The iTerm2 version. If you're not running in iTerm2, it will return `undefined`.
 
 @example
 ```
 import iterm2Version from 'iterm2-version';
 
-iterm2Version();
-//=> '3.0.15'
+console.log(iterm2Version());
+//=> '3.5.10'
 ```
 */
 export default function iterm2Version(): string | undefined;
