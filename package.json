@@ -36,7 +36,7 @@
 	],
 	"dependencies": {
 		"app-path": "^4.0.0",
-		"plist": "^3.1.0",
+		"plist": "^5.0.0",
 		"terminal-query": "^0.1.0"
 	},
 	"devDependencies": {
