@@ -2,7 +2,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import process from 'node:process';
 import appPath from 'app-path';
-import plist from 'plist';
+import {parse as plistParse} from 'plist';
 import {getVersionFromTerminal} from './utilities.js';
 
 let cachedVersion;
@@ -29,7 +29,7 @@ export default function iterm2Version() {
 	if (process.platform === 'darwin') {
 		try {
 			const filePath = path.join(appPath.sync('iTerm'), 'Contents/Info.plist');
-			cachedVersion = plist.parse(fs.readFileSync(filePath, 'utf8')).CFBundleVersion;
+			cachedVersion = plistParse(fs.readFileSync(filePath, 'utf8')).CFBundleVersion;
 			return cachedVersion;
 		} catch {}
 	}
